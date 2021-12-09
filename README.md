@@ -1,4 +1,7 @@
 # Calculate time left till Christmas
+We're live with the site:
+https://attilaberencsi.github.io/christmaseve/
+
 Fun programming with the children <3, to get know when the surprise boxes appear :)
 
 We're over the https://github.com/attilaberencsi/zbirthdays project in ABAP. But frankly children want instant results.
