@@ -1,0 +1,22 @@
+<mvc:View xmlns:cards="sap.f.cards"
+    controllerName="apa.dani.program.eventcalculator.controller.Event"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+                    <l:VerticalLayout class="sapUiContentPadding" id="mainContent">
+                        <Title titleStyle="H1" id="idChristmasTitle" text="{i18n>christmasEve}"></Title>
+                        <Title titleStyle="H2" id="idChristmasRemainingTimeTitle" text=""></Title>
+                     </l:VerticalLayout>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
