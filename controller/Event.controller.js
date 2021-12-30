@@ -9,6 +9,7 @@ sap.ui.define([
 
 		return Controller.extend("apa.dani.program.eventcalculator.controller.Event", {
 			onInit: function () {
+		var that = this;		
                 var countDownDate = new Date("Dec 24, 2021 18:00:00").getTime();
                 var oChristmasTimerTitle = this.getView().byId("idChristmasRemainingTimeTitle");
                 var sDays = this.getView().getModel("i18n").getResourceBundle().getText("days");
@@ -37,7 +38,7 @@ sap.ui.define([
                   // If the count down is finished, write some text
                   if (distance < 0) {
                     clearInterval(x);
-                    oChristmasTimerTitle.setText(this.getView().getModel("i18n").getResourceBundle().getText("reachedChristmas"));
+                    oChristmasTimerTitle.setText(that.getView().getModel("i18n").getResourceBundle().getText("reachedChristmas"));
                   }
                 }, 1000);
 			}
